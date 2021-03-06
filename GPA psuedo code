@@ -1,0 +1,41 @@
+//Global Variables
+
+Grade values, int(s) A == 4; B == 3; C == 2; D == 1; F == 0; |
+
+Output - float GPA;
+
+X == null; (or whatever C# needs for you to direct the program to a different loop, as long as you check it first, it should be fine as basically anything)
+
+//Local Variables
+
+int Count; (should start at 1, and reset everytime the program is run from the beginning) 
+int GradeSum;
+int input; 
+
+//each passthrough below here
+
+First start-
+console output  ( "This program will output your GPA average. Please inputer your current crades as "A B C D F", and when you are done, please enter "X". 
+                    The system will not recognize other characters.") then goto step one
+
+Additional start ("Please enter more grade letters or enter "X" to finish.") then to step one
+
+step one-
+
+Take user input.
+
+step two-
+
+Check if user input is "X"
+
+step two A
+
+If user input is "X", then { GPA == GradeSum/Count; output "Your GPA is currently {GPA}." } then reset program state to default.
+
+step two B
+
+Check if user input is "A" or "B" or "C" or "D" or "F"
+
+If user input is one of the above, set input to that var. then set GradeSum += GradeSum + input; then increment count++; then return to additional start
+
+ayy hope this helps and if not, thank you for getting me thinking like this again, it's been a really long time
